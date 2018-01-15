@@ -1,0 +1,29 @@
+<script src="/assets/js/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+
+<script>
+function getGems(gems,gemsSYM, gemsURL) {
+var $gems = $('#'+gems);
+$('#loading-'+gemsSYM).show();
+   $.ajax({
+       type: 'GET',
+       url: gemsURL,
+       success: function(data) {
+           $.each(data, function(i, v) {
+               $gems.append('$'+parseFloat(v.price_usd).toFixed(2)+' | $'+parseFloat(v.market_cap_usd).toFixed(0));
+           });
+       },
+       complete: function(){
+       $('#loading-'+gemsSYM).hide();
+       }
+   });
+}
+$(function () {
+    getGems('Ethereum', 'ETH', 'https://api.coinmarketcap.com/v1/ticker/ethereum/');
+    getGems('District0x', 'DNT', 'https://api.coinmarketcap.com/v1/ticker/district0x/');
+    getGems('Cardano', 'ADA', 'https://api.coinmarketcap.com/v1/ticker/cardano/');
+});
+</script>
+

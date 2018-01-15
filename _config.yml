@@ -1,0 +1,24 @@
+name: "Altgem"
+title: "Altgem - Researching crypto gems."
+email: ""
+description: "Researching & rating cryptocurrency gems."
+baseurl: ""
+url: ""
+
+permalink: "/:title/"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude: [".c9/metadata", "build.md", "*.BAK", "package.json", "gulpfile.js", "gulpconfig.json", "Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", ".jekyll-cache/", ".sass-cache/", ".git/"]  
+
+sass:
+  style: compressed
+  
+#webmentions:
+#  username: eloquent-swanson-57ab2a.netlify.com
+#  js:
+#    destination: assets/js
+#    uglify: false
+#    deploy: false

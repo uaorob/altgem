@@ -1,0 +1,122 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/assets/css/critical.css" rel="stylesheet"><style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400');
+    </style><link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'"><link rel="preload" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></noscript><noscript><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"></noscript><link href="/assets/css/main.css" rel="stylesheet"><script type="text/javascript">
+    /*! loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
+(function(w){
+	"use strict";
+	/* exported loadCSS */
+	var loadCSS = function( href, before, media ){
+		// Arguments explained:
+		// `href` [REQUIRED] is the URL for your CSS file.
+		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+			// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+		var doc = w.document;
+		var ss = doc.createElement( "link" );
+		var ref;
+		if( before ){
+			ref = before;
+		}
+		else {
+			var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+			ref = refs[ refs.length - 1];
+		}
+
+		var sheets = doc.styleSheets;
+		ss.rel = "stylesheet";
+		ss.href = href;
+		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+		ss.media = "only x";
+
+		// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+		function ready( cb ){
+			if( doc.body ){
+				return cb();
+			}
+			setTimeout(function(){
+				ready( cb );
+			});
+		}
+		// Inject link
+			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+		ready( function(){
+			ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+		});
+		// A method (exposed on return object for external use) that mimics onload by polling document.styleSheets until it includes the new sheet.
+		var onloadcssdefined = function( cb ){
+			var resolvedHref = ss.href;
+			var i = sheets.length;
+			while( i-- ){
+				if( sheets[ i ].href === resolvedHref ){
+					return cb();
+				}
+			}
+			setTimeout(function() {
+				onloadcssdefined( cb );
+			});
+		};
+
+		function loadCB(){
+			if( ss.addEventListener ){
+				ss.removeEventListener( "load", loadCB );
+			}
+			ss.media = media || "all";
+		}
+
+		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+		if( ss.addEventListener ){
+			ss.addEventListener( "load", loadCB);
+		}
+		ss.onloadcssdefined = onloadcssdefined;
+		onloadcssdefined( loadCB );
+		return ss;
+	};
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ));
+</script><link rel="shortcut icon" href="/favicon.ico"><meta name="description" content="{&quot;layout&quot;=&gt;&quot;default&quot;, &quot;title&quot;=&gt;&quot;Altgem - Crypto Gems&quot;, &quot;description&quot;=&gt;&quot;Researching cryptocurrencies, tokens and coin gems that show potential growth.&quot;, &quot;cont..."><meta name="title" content="Altgem - Crypto Gems"><title>Altgem - Crypto Gems</title><link rel="canonical" href="/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@"><meta name="twitter:creator" content="@"><meta name="twitter:title" content="Altgem - Crypto Gems"><meta name="twitter:description" content="Researching & rating cryptocurrency gems."><meta name="twitter:image"><meta name="twitter:url" content="/"></head><body><div class="wrapper"><div class="container"><div class="row"><div class="col-md-12"><h1><a href="/">Altgem</a></h1><p>Researching & rating cryptocurrency gems.</p></div></div></div><header><div class="container"><a href="/hello-crypto-world/" class="biglink gem"><div class="row"><div class="col-md-4 col-sm-12 col-xs-12"><div class="gem-info"><div class="gem-time"><span class="newold"><time class="postedon" datetime="2018-01-15T22:49:53+00:00"><span class="postedago"></span></time></span></div></div></div><div class="col-md-8 col-sm-12 col-xs-12"><div class="gem-info"><span class="gem-tag">&#128214;</span></div><div class="gem-info"><div class="gem-name"><img class="img-fluid gem-img">Hello Crypto World</div></div></div></div></a></div></header></div><footer class="footer"><div class="container"><div class="row"><div class="col-md-6"><p class="copyright"><span class="text-muted">&copy;2018 Altgem.com maintained by <img src="/assets/img/ico_twitter_dark.png"> <a href="https://twitter.com/uaorob" target="_blank" class="external">@uaorob</a>.</span></p></div><div class="col-md-6"><p>Last Update: 2018-01-15 22:58:55 +0000</p></div></div></div></footer><div class="notification-box alert alert-dismissable"><div class="row"><div class="col-md-12"><span id="notification-title">Disclaimer</span><p id="notification-details">Altgem is not offering professional financial advice. Conduct your own research before investing in any high-risk venture. You are solely responsible for managing your investments and any potential losses that might result from related activities.</p><button class="notification-btn close" data-dismiss="alert" aria-label="close">Accept</button></div></div></div><script>
+      function ago(date) {
+    function render(n, unit) {
+        return n + " " + unit + ((n == 1) ? "" : "s") + " ago";
+    }
+
+    var seconds = Math.floor((new Date() - date) / 1000);
+
+    var interval = Math.floor(seconds / (60 * 60 * 24 * 30 * 365));
+    if (Math.floor(seconds / (60 * 60 * 24 * 30 * 365)) >= 1) {
+        return render(interval, "year");
+    }
+    interval = Math.floor(seconds / (60 * 60 * 24 * 30));
+    if (interval >= 1) {
+        return render(interval, "month");
+    }
+    interval = Math.floor(seconds / (60 * 60 * 24));
+    if (interval >= 1) {
+        return render(interval, "day");
+    }
+    interval = Math.floor(seconds / (60 * 60));
+    if (interval >= 1) {
+        return render(interval, "hour");
+    }
+    interval = Math.floor(seconds / 60);
+    if (interval >= 1) {
+        return render(interval, "minute");
+    }
+    interval = Math.floor(seconds);
+    return render(interval, "second");
+}
+
+const timeElems = document.getElementsByClassName('postedon');
+
+for (let i = 0, len = timeElems.length; i < len; i++) {
+  let date = Date.parse(timeElems[i].getAttribute("datetime"));
+  timeElems[i].firstElementChild.innerHTML = ago(date);
+}
+
+  </script><script src="/assets/js/jquery-3.1.1.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script></body></html>

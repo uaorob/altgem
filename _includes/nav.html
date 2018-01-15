@@ -1,0 +1,27 @@
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        
+        {% if page.layout == "post" %} 
+        <h1><a href="/">Altgem</a> />
+        <img src="{{ page.img }}" class="img-fluid gem-img"/> 
+        {% if page.type == "guide" %}&#128214; <!--&#128184;--> 
+        {{ page.title }} 
+        </h1>
+        {% else %}
+        {{ page.title }}
+        {% include gem-ratings.html %}
+        <div class="gem-price txt-sm d-inl" id="{{ page.title }}">   
+        <div id="loading-{{ page.symbol }}" class="d-inl">
+        <img src="/assets/img/spinner.svg" width="20px"/>
+        </div>
+        </div>
+        </h1>
+        {% endif %}
+        {% else %}
+        <h1><a href="/">Altgem</a></h1>
+        <p>{{ site.description }}</p>
+        {% endif %}
+    </div>  
+</div>
+</div>

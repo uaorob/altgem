@@ -1,0 +1,122 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/assets/css/critical.css" rel="stylesheet"><style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400');
+    </style><link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'"><link rel="preload" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></noscript><noscript><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"></noscript><link href="/assets/css/main.css" rel="stylesheet"><script type="text/javascript">
+    /*! loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
+(function(w){
+	"use strict";
+	/* exported loadCSS */
+	var loadCSS = function( href, before, media ){
+		// Arguments explained:
+		// `href` [REQUIRED] is the URL for your CSS file.
+		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+			// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+		var doc = w.document;
+		var ss = doc.createElement( "link" );
+		var ref;
+		if( before ){
+			ref = before;
+		}
+		else {
+			var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+			ref = refs[ refs.length - 1];
+		}
+
+		var sheets = doc.styleSheets;
+		ss.rel = "stylesheet";
+		ss.href = href;
+		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+		ss.media = "only x";
+
+		// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+		function ready( cb ){
+			if( doc.body ){
+				return cb();
+			}
+			setTimeout(function(){
+				ready( cb );
+			});
+		}
+		// Inject link
+			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+		ready( function(){
+			ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+		});
+		// A method (exposed on return object for external use) that mimics onload by polling document.styleSheets until it includes the new sheet.
+		var onloadcssdefined = function( cb ){
+			var resolvedHref = ss.href;
+			var i = sheets.length;
+			while( i-- ){
+				if( sheets[ i ].href === resolvedHref ){
+					return cb();
+				}
+			}
+			setTimeout(function() {
+				onloadcssdefined( cb );
+			});
+		};
+
+		function loadCB(){
+			if( ss.addEventListener ){
+				ss.removeEventListener( "load", loadCB );
+			}
+			ss.media = media || "all";
+		}
+
+		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+		if( ss.addEventListener ){
+			ss.addEventListener( "load", loadCB);
+		}
+		ss.onloadcssdefined = onloadcssdefined;
+		onloadcssdefined( loadCB );
+		return ss;
+	};
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ));
+</script><link rel="shortcut icon" href="/favicon.ico"><meta name="description" content="Researching & rating cryptocurrency gems."><meta name="title" content="Hello Crypto World"><title>Hello Crypto World</title><link rel="canonical" href="/hello-crypto-world/"><meta property="article:modified_time" content="2018-01-14T14:00:00+00:00"><meta property="article:published_time" content="2018-01-14T14:00:00+00:00"><meta property="article:author" content="https://www.twitter.com/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@"><meta name="twitter:creator" content="@"><meta name="twitter:title" content="Hello Crypto World"><meta name="twitter:description" content="1441 cryptocurrencies and counting"><meta name="twitter:image"><meta name="twitter:url" content="/hello-crypto-world/"></head><body><div class="container"><div class="row"><div class="col-md-12"><h1><a href="/">Altgem</a> /> <img class="img-fluid gem-img"> &#128214;Hello Crypto World</h1></div></div></div><div class="container"><div class="row"><div class="col-md-12"><div class="gem-info"><div class="gem-time"><span class="newold">Updated&nbsp;<time class="postedon" datetime="2018-01-15T22:49:53+00:00"><span class="postedago"></span> on 10:49:53 PM January 15, 2018</time></span></div></div></div></div></div><div class="wrapper"><div class="container"><div class="row"><div class="col-md-12"><h2 id="1441-cryptocurrencies-and-counting">1441 cryptocurrencies <a href="https://coinmarketcap.com" class="external" target="_blank">and counting</a></h2><p>That’s how hard it is to separate gems from scams.</p><p>The chaos in our information and implicit disorder in our thoughts has reached an ATH.</p><p>I have created <strong>Altgem</strong> to help you &amp; myself in our endless quest of separating facts from BS. In the crypto space there is a lot of that about. This website should help curb the <em>FOMO &amp; FUD</em> in both our lives and hopefully make each day less stressful and more productive.</p><p><img src="https://media.giphy.com/media/3oz8xM5Opwl0i60Kf6/giphy.gif" alt="Spock" class="img-responsive"></p><p>I will be posting:</p><ul><li>crypto alt gem reviews &amp; ratings based on my research</li><li>webdev notes &amp; guides</li><li>crypto notes &amp; guides</li></ul><p>The website will be updated regularly with fresh content and <em>altgem</em> ratings might change depending on what happens with that coin and the additional research I might do for it periodically.</p><h2 id="disclaimer">Disclaimer</h2><p>I guess you’re already aware that this doesn not constitute professional financial advice and you should conduct your own research before investing in any high-risk venture. You are solely responsible for managing your investments and any potential losses that might result from related activities. You won’t be able to pass any type of responsibility whatsoever on to me or this website, regardless of any circumstances.</p><h2 id="roadmap-2018">Roadmap 2018</h2><blockquote><p>January:</p><ul><li>add sort/filter posts</li><li>design logo</li><li>integrate comment system</li><li>approach 100/100 in Google PageSpeed Insights</li></ul></blockquote><blockquote><p>February:</p><ul><li>auto tweet posts on build</li><li>migrate to progressive web app</li><li>add web push notifications</li><li>integrate webmentions</li></ul></blockquote></div></div></div></div><footer class="footer"><div class="container"><div class="row"><div class="col-md-6"><p class="copyright"><span class="text-muted">&copy;2018 Altgem.com maintained by <img src="/assets/img/ico_twitter_dark.png"> <a href="https://twitter.com/uaorob" target="_blank" class="external">@uaorob</a>.</span></p></div><div class="col-md-6"><p>Last Update: 2018-01-15 22:58:55 +0000</p></div></div></div></footer><script>
+      function ago(date) {
+    function render(n, unit) {
+        return n + " " + unit + ((n == 1) ? "" : "s") + " ago";
+    }
+
+    var seconds = Math.floor((new Date() - date) / 1000);
+
+    var interval = Math.floor(seconds / (60 * 60 * 24 * 30 * 365));
+    if (Math.floor(seconds / (60 * 60 * 24 * 30 * 365)) >= 1) {
+        return render(interval, "year");
+    }
+    interval = Math.floor(seconds / (60 * 60 * 24 * 30));
+    if (interval >= 1) {
+        return render(interval, "month");
+    }
+    interval = Math.floor(seconds / (60 * 60 * 24));
+    if (interval >= 1) {
+        return render(interval, "day");
+    }
+    interval = Math.floor(seconds / (60 * 60));
+    if (interval >= 1) {
+        return render(interval, "hour");
+    }
+    interval = Math.floor(seconds / 60);
+    if (interval >= 1) {
+        return render(interval, "minute");
+    }
+    interval = Math.floor(seconds);
+    return render(interval, "second");
+}
+
+const timeElems = document.getElementsByClassName('postedon');
+
+for (let i = 0, len = timeElems.length; i < len; i++) {
+  let date = Date.parse(timeElems[i].getAttribute("datetime"));
+  timeElems[i].firstElementChild.innerHTML = ago(date);
+}
+
+  </script><script src="/assets/js/jquery-3.1.1.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script></body></html>

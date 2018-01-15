@@ -1,0 +1,23 @@
+<div class="container">
+   <div class="row">
+       <div class="col-md-12">
+        <div class="gem-info">
+            <div class="gem-time">
+                <span class="newold">
+                {% if page.last-modified-date %}
+                Updated&nbsp;  
+                <time class="postedon" datetime="{{ page.last-modified-date | date_to_xmlschema }}">
+                <span class="postedago"></span> on {{ page.last-modified-date | date: "%r %B %-d, %Y" }}
+                </time>
+                {% else %}
+                Posted&nbsp;
+                <time class="postedon" datetime="{{ page.date | date_to_xmlschema }}">
+                <span class="postedago"></span> on {{ page.date | date: "%r %B %-d, %Y" }}
+                </time>
+                {% endif %}
+                </span>
+            </div>
+         </div>     
+       </div>
+   </div> 
+</div>

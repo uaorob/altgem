@@ -1,0 +1,105 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    height: 100%;
+    background-color: $body-bg-color;
+    color: $font-color;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+a {
+    color: $font-color;
+    box-shadow: 0px 1px 0px 0px #9fa1a3;
+}
+a:hover, a.external:hover {
+    color: #b32221;
+    background: #f3f7fa;
+    text-decoration: none;
+    box-shadow: 0px 1px 0px 0px #b32221;
+}
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+a.external.after:hover {
+    color: #b32221;
+}
+a.external:after {
+    content: " ↗";
+    color: #9fa1a3;
+}
+.biglink:hover {
+    box-shadow: none;
+}
+.wrapper {
+    padding-bottom: 125px;
+}
+.gem {
+    background: #e9f1f7;
+    //padding: 25px;
+    border: 1px solid #d3dbe1;  
+    font-size: 26px;
+}
+.v-center {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.gem-price {
+    font-weight: 100;
+    color: #505050;
+    margin-left: 25px;
+}
+.gem-name {
+    font-weight: 700;
+}
+
+.gem-price {
+    margin-left: 0;
+}
+
+#loading-image > span {
+    opacity: 0.8;
+}
+
+.biglink {
+    width: 100%;
+    display: block; //inline-flex;
+    padding: 25px;
+}
+a:hover {
+    text-decoration: none;
+}
+.gem-info {
+    //width: max-content;
+}
+
+// Post Individual
+
+.txt-sm {
+    font-size: smaller;
+}
+.d-inl {
+    display: inline;
+}
+
+.post-time {
+    opacity: 0.6;
+    text-transform: capitalize;
+}
+
+.newold {
+    opacity: 0.8;
+}
+
+blockquote {
+    margin: 0;
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+}

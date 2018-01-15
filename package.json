@@ -1,0 +1,35 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "**Technologies used:**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uaorob/altgem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uaorob/altgem/issues"
+  },
+  "homepage": "https://github.com/uaorob/altgem#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-shell": "^0.6.5",
+    "gulp-uncss": "^1.0.6",
+    "run-sequence": "^2.2.1",
+    "gulp-imagemin": "^2.2.1",
+    "imagemin-pngquant": "^4.1.0",
+    "imagemin-jpegtran": "^4.1.0",
+    "imagemin-gifsicle": "^4.1.0",
+    "gulp-replace": "^0.5.3",
+    "gulp-image-resize": "^0.6.0",
+    "gulp-download": "0.0.1"
+  }
+}

@@ -1,0 +1,80 @@
+/////// MEDIA QUERIES ///////
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    .notification-box.alert.alert-dismissable {
+    right: 15px;
+    }
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+.gem-rating {
+    text-align: right;
+}
+.gem-tag {
+    float: right;
+}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    
+    
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { 
+    .notification-box.alert.alert-dismissable {
+    width: auto;
+    margin-bottom: 0;
+    } 
+    .biglink {
+    text-align: center;
+    text-align: -webkit-center;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) { 
+    .d-inl {
+    display: block;
+    padding-top: 20px;
+}
+    
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { 
+    .gem-time {
+    font-size: 20px;
+    position: relative;
+    top: 5px;    
+    }
+    .gem-info {
+        padding: 10px 0;
+    }
+    
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) { 
+    
+    
+}
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+

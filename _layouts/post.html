@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    <body>
+  
+  {% include nav.html %}
+  {% include post-details.html %}
+  
+  <div class="wrapper">
+  <div class="container">
+   <div class="row">
+       <div class="col-md-12">
+        {{ content }}       
+       </div>
+   </div> 
+  </div>
+  </div>
+        
+  {% include footer.html %}       
+  
+  
+  
+  {% include hrsago.html %}
+  {% include js.html %} 
+  {% if page.type != "guide" %}
+  {% include js-api.html %}  
+  {% else %}
+  {% endif %}
+  </body>
+</html>

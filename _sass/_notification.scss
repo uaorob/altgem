@@ -1,0 +1,96 @@
+// Disclaimer Notification Box
+
+.notification-box {
+    opacity: 0.9;
+    z-index: 10;
+    width: 300px;
+    right: 0;
+    position: fixed;
+    bottom: 0;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#notification-title {
+    color: #fafafa;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1;
+    height: 17px;
+}
+
+#notification-details {
+    font-size: 15px;
+    //color: #8f979e;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 10px 0;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.notification-box .row {
+    padding: 15px;
+    border: 1px solid #191b1d;
+    background: rgba(21, 26, 35, 0.95);
+    background: linear-gradient(to bottom, #283244 0%, rgba(21, 26, 35, 0.95) 100%);
+}
+
+.notification-btn {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #3d4452;
+    background: rgba(21, 26, 35, 0.95);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    padding: 4px 20px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    outline: 0;
+    overflow: visible;
+    max-width: 100%;
+    transition: color 200ms, background-color 200ms, border-color 200ms;
+}
+
+.notification-btn:hover {
+    background-color: #3c434d;
+    border: solid 1px #616774;
+    color: #fff;
+}
+
+.alert {
+    padding: inherit;
+    border: none;
+    border-radius: 0;
+}
+
+.notification-btn.close {
+    float: none;
+    text-shadow: none;
+    border: 1px solid #3d4452;
+    background: rgba(21, 26, 35, 0.95);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    opacity: 1;
+    padding: 4px 20px;
+    display: inline-block;
+    position: relative;
+    left: 0;
+}
+
+.notification-btn.close:hover {
+    background-color: #3c434d;
+    border: solid 1px #616774;
+    color: #fff;
+}
