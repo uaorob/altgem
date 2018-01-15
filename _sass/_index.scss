@@ -31,7 +31,7 @@ a.external:after {
     content: " ↗";
     color: #9fa1a3;
 }
-.biglink:hover {
+.biglink, .biglink:hover {
     box-shadow: none;
 }
 .wrapper {
