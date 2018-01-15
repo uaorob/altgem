@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/uaorob/altgem#readme",
   "devDependencies": {
-    "ruby":"^2.2.5",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-minify-css": "^1.2.4",
