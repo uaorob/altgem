@@ -49,8 +49,12 @@ gulp.task('optimize-html', function() {
 		.pipe(minifyHTML({
 			quotes: true
 		}))
-		.pipe(replace(/<link href=\"\/css\/main.css\"[^>]*>/, function(s) {
-			var style = fs.readFileSync('_site/css/main.css', 'utf8');
+		.pipe(replace(/<link href=\"\/assets\/css\/main.css\"[^>]*>/, function(s) {
+			var style = fs.readFileSync('_site/assets/css/main.css', 'utf8');
+			return '<style>\n' + style + '\n</style>';
+		}))
+		.pipe(replace(/<link href=\"\/assets\/css\/critical.css\"[^>]*>/, function(s) {
+			var style = fs.readFileSync('_site/assets/css/critical.css', 'utf8');
 			return '<style>\n' + style + '\n</style>';
 		}))
 		.pipe(gulp.dest('_site/'));
@@ -58,7 +62,7 @@ gulp.task('optimize-html', function() {
 
 gulp.task('include-css', function() {
   return gulp.src('_site/**/*.html')
-    .pipe(replace(/<link href=\"\/css\/main.css\"[^>]*>/, function(s) {
+    .pipe(replace(/<link href=\"\/assets\/css\/main.css\"[^>]*>/, function(s) {
       var style = fs.readFileSync('_site/assets/css/main.css', 'utf8');
       return '<style>\n' + style + '\n</style>';
     }))

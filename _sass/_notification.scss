@@ -9,7 +9,6 @@
     bottom: 0;
     margin: 10px;
     background: transparent;
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -40,6 +39,7 @@
     border: 1px solid #191b1d;
     background: rgba(21, 26, 35, 0.95);
     background: linear-gradient(to bottom, #283244 0%, rgba(21, 26, 35, 0.95) 100%);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
 }
 
 .notification-btn {

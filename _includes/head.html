@@ -12,15 +12,14 @@
     {% endif %}
     
     <link href="{{ "/assets/css/critical.css" | prepend: site.baseurl }}" rel="stylesheet" >
-    <style>
-    @import url('https://fonts.googleapis.com/css?family=Roboto:400');
-    </style> 
+    
 	<!-- loadCSS Non-critical -->
 	<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
 	<link rel="preload" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:400" as="style" onload="this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></noscript>
 	<noscript><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"></noscript> 
-   
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400"></noscript>
     <!-- Custom CSS -->
     <link href="{{ "/assets/css/main.css" | prepend: site.baseurl }}" rel="stylesheet" >
     
