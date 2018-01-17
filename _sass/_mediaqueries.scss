@@ -8,12 +8,16 @@
     .notification-box.alert.alert-dismissable {
     right: 15px;
     }
-    
+    .footer {
+        bottom: 0;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    
+    .gem-toggle {
+    float: right;
+}
 
 }
 
@@ -44,6 +48,9 @@
     .biglink {
     text-align: center;
     text-align: -webkit-center;
+    }
+    .active.btn.gem-toggle {
+        display: block;
     }
 }
 

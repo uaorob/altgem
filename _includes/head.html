@@ -31,9 +31,9 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     
     <!-- Google SEO Optimization -->
-    <meta name="description" content="{% if page.description %}{{ <page class="description"></page> | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
      <meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
-       <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
+       <title>{% if page.title %}{{ site.name }} | {{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
     {% if page.robots %}
     <meta name="robots" content="{{ page.robots }}">
     {% endif %}

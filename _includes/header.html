@@ -1,9 +1,127 @@
 <header>
-    <div class="container">
-                
-{% assign sorted_posts = site.posts | sort: "last-modified-date" | reverse %}
+<div class="container box-parent" id="gems">
+  
+              
+{% assign sorted_posts = site.posts | sort: "last-modified-date" | reverse | where:"gem", true %}
 {% for post in sorted_posts %}
+<div class="box gems"> 
+<a href="{{ post.url }}" class="biglink gem">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12">   
+            <div class="gem-info">
+                <div class="gem-time">
+                <span class="newold">
+                <time class="postedon" datetime="{{ post.last-modified-date | date_to_xmlschema }}">
+                <span class="postedago"></span>
+                </time>
+                </span>
+                </div>
+            </div>
+            </div>
+            {% if post.rating %}
+            <div class="col-md-4 col-sm-12 col-xs-12">  
+            {% else %}
+            <div class="col-md-8 col-sm-12 col-xs-12">  
+            <div class="gem-info">
+                <span class="gem-tag">&#128214;</span>
+            </div>
+            {% endif %}
+            <div class="gem-info">
+                <div class="gem-name"> 
+                {% if post.type == "guide" %}
+                <img src="{{ post.img }}" class="img-fluid gem-img"/>{{ post.title }}
+                {% else %}
+                <img src="{{ post.img }}" class="img-fluid gem-img"/>
+                {{ post.title }}
+                {% endif %}
+                </div>
+            </div>
+            </div>
+            {% if post.rating %}
+            <div class="col-md-4 col-sm-12 col-xs-12">   
+            <div class="gem-info">
+                <div class="gem-rating">   
+                  {% if post.rating == "0.5" %}
+                  <img src="/assets/img/Gem-half.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  {% elsif post.rating == "1" %}
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  {% elsif post.rating =="1.5" %}
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-half.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  {% elsif post.rating =="2" %}
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  {% elsif post.rating =="2.5" %}
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-half.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  {% elsif post.rating =="3" %}
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  {% elsif post.rating =="3.5" %}
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-half.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  {% elsif post.rating =="4" %}
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-empty.svg"/>
+                  {% elsif post.rating =="4.5" %}
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-half.svg"/>
+                  {% elsif post.rating =="5" %}
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-full.svg"/>
+                  <img src="/assets/img/Gem-full.svg"/>
+                  {% else %}
+                  {% endif %}
+                </div>
+            </div>
+            </div>
+            
+            {% endif %}
+        </div>
+        </a>
+      </div>
+    </div>
+{% endfor %}
 
+
+    
+<div class="container box-parent" id="guides">    
+<!-- Guides -->
+     
+{% assign sorted_posts_2 = site.posts | sort: "last-modified-date" | reverse | where:"guide", true %}
+{% for post in sorted_posts_2 %}
+<div class="box guides">   
 <a href="{{ post.url }}" class="biglink gem">
         <div class="row">
             <div class="col-md-4 col-sm-12 col-xs-12">   
@@ -111,5 +229,11 @@
         </a>
 {% endfor %}
 
-    </div>
+</div>
+</div>
+
+
+
+
+</div>
 </header>

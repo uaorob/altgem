@@ -93,7 +93,7 @@ gulp.task('deploy', function(callback) {
 		'optimize-html',
 		'include-css',
 	    //'netlify',
-		'serve-skipbuild', 
+		//'serve-skipbuild', 
 		callback
 	);
 });

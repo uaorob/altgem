@@ -103,3 +103,26 @@ blockquote {
     color: #6a737d;
     border-left: 0.25em solid #dfe2e5;
 }
+
+.deploy-date {
+    opacity: 0.7;
+}
+
+
+// Index Page
+
+.shaddow {
+    display: none;
+}
+.light {
+    display: initial;
+}
+.active.btn.gem-toggle {
+    border: 1px solid #d3dbe1;
+    border-radius: 1px;
+    background: #e9f1f7;
+    outline: none;
+}
+.active.btn.gem-toggle:focus {
+    outline: none;
+}

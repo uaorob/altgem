@@ -6,11 +6,28 @@
     <div class="wrapper">  
     {% include nav.html %}
     {% include header.html %}
-    </div>  
+    </div>
     {% include footer.html %}
     {% include disclaimer.html %}
     
+    
     {% include hrsago.html %}
     {% include js.html %}
+    <script>
+    $('.gem-toggle').on('click',
+    function()
+    {
+        $('#guides').toggle();
+        //$('#guides').addClass('shaddow');
+        //$(this).html('').toggle('Guides');
+        $.fn.toggleHTML = function(a, b) {
+        this.html(function(_, html){
+            return html === a  ? b : a;
+        })
+        }
+        $(this).toggleHTML('Everything', 'Gems Only');
+    }
+    );
+    </script>
   </body>
 </html>

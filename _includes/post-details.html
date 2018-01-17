@@ -5,9 +5,14 @@
             <div class="gem-time">
                 <span class="newold">
                 {% if page.last-modified-date %}
-                Updated&nbsp;  
                 <time class="postedon" datetime="{{ page.last-modified-date | date_to_xmlschema }}">
+                Updated&nbsp;  
                 <span class="postedago"></span> on {{ page.last-modified-date | date: "%r %B %-d, %Y" }}
+                </time>
+                <br>
+                <time class="postedon deploy-date" datetime="{{ page.date | date_to_xmlschema }}">
+                 Deployed&nbsp;
+                <span class="postedago"></span> on {{ page.date | date: "%r %B %-d, %Y" }}
                 </time>
                 {% else %}
                 Posted&nbsp;
