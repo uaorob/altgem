@@ -29,9 +29,8 @@
             <div class="gem-info">
                 <div class="gem-name"> 
                 {% if post.type == "guide" %}
-                <img src="{{ post.img }}" class="img-fluid gem-img"/>{{ post.title }}
+                {{ post.title }}
                 {% else %}
-                <img src="{{ post.img }}" class="img-fluid gem-img"/>
                 {{ post.title }}
                 {% endif %}
                 </div>
@@ -146,9 +145,8 @@
             <div class="gem-info">
                 <div class="gem-name"> 
                 {% if post.type == "guide" %}
-                <img src="{{ post.img }}" class="img-fluid gem-img"/>{{ post.title }}
+                {{ post.title }}
                 {% else %}
-                <img src="{{ post.img }}" class="img-fluid gem-img"/>
                 {{ post.title }}
                 {% endif %}
                 </div>

@@ -34,9 +34,6 @@ a.external:after {
 .biglink, .biglink:hover {
     box-shadow: none;
 }
-.wrapper {
-    padding-bottom: 125px;
-}
 .gem {
     background: #e9f1f7;
     //padding: 25px;
@@ -125,4 +122,9 @@ blockquote {
 }
 .active.btn.gem-toggle:focus {
     outline: none;
+}
+
+
+#guides {
+    padding-bottom: 125px;
 }

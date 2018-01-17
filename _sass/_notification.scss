@@ -94,3 +94,13 @@
     border: solid 1px #616774;
     color: #fff;
 }
+
+// Chrome fixes
+
+.alert-dismissable, .alert-dismissible {
+    padding-right: 0;
+}
+
+.alert {
+    padding: 0;
+}
