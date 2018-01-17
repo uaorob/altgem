@@ -101,3 +101,13 @@ gulp.task('deploy', function(callback) {
 		callback
 	);
 });
+
+gulp.task('deploy-netlify', function(callback) {
+	runSequence(
+		'jekyll',
+		'optimize-css',
+		'optimize-html',
+		'include-css',
+		callback
+	);
+});
