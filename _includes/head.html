@@ -12,14 +12,21 @@
     {% endif %}
     
     <link href="{{ "/assets/css/critical.css" | prepend: site.baseurl }}" rel="stylesheet" >
-    
+    <style>
+    /* latin */
+    @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+    }
+    </style> 
 	<!-- loadCSS Non-critical -->
 	<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
 	<link rel="preload" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
-	<link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:400" as="style" onload="this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></noscript>
 	<noscript><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"></noscript> 
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400"></noscript>
     <!-- Custom CSS -->
     <link href="{{ "/assets/css/main.css" | prepend: site.baseurl }}" rel="stylesheet" >
     
