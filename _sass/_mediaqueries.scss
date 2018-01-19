@@ -9,7 +9,10 @@
     right: 15px;
     }
     .footer {
-        bottom: 0;
+       bottom: 0;
+    }
+    .comment-btn, textarea, input {
+        width: 100%;
     }
 }
 
@@ -18,7 +21,9 @@
     .gem-toggle {
     float: right;
 }
-
+.form-details{
+    padding-top: 100px;
+}
 }
 
 // Large devices (desktops, 992px and up)
@@ -53,7 +58,10 @@
         display: block;
     }
     .footer {
-        margin-top: 50px;
+        //margin-top: 50px;
+    }
+    .comment-btn, textarea, input {
+        width: 100%;
     }
 }
 

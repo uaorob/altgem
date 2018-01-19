@@ -13,15 +13,43 @@
         {{ content }}       
        </div>
    </div> 
+   </div>
+   </div>
    {% if page.comments == "true" %}
+   <div class="wrapper" id="wrapper-comments">
+   <div class="container" id="comments">
    <div class="row">
        <div class="col-md-12">
-        {% include comments.html %}      
+           <h2>Comments</h2>
+       </div>
+    </div> 
+    <div class="row">
+       <div class="col-md-6 single-comment">
+        {% assign comments = site.data.comments[page.slug] | sort %}
+        {% for comment in comments %}
+        {% assign email = comment[1].email %}
+        {% assign url = comment[1].url %}
+        {% assign name = comment[1].name %}
+        {% assign message = comment[1].message %}
+        {% include comment.html index=forloop.index email=email url=url name=name message=message %}
+        {% endfor %}
        </div>
    </div> 
+   <div class="row">
+       <div class="col-md-6 comment-form">
+        {% include comments-form.html %}      
+       </div>
+       <div class="col-md-6 text-right">
+           <p class="form-details">
+               <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" class="external" target="_blank">Markdown</a> is allowed.</p>
+        <p>Your email will not be posted.</p>
+        </div>
+   </div> 
+   </div>
+   </div>
    {% endif %}
-  </div>
-  </div>
+  
+  
         
   {% include footer.html %}       
   

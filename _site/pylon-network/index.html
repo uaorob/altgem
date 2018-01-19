@@ -294,24 +294,69 @@ He has a background heavily focused in electrical engineering.</p>
        
        </div>
    </div> 
+   </div>
+   </div>
    
+   <div class="wrapper" id="wrapper-comments">
+   <div class="container" id="comments">
    <div class="row">
        <div class="col-md-12">
-        <form method="POST" action="https://api.staticman.net/v2/entry/uaorob/altgem/master/comments">
+           <h2>Comments</h2>
+       </div>
+    </div> 
+    <div class="row">
+       <div class="col-md-6 single-comment">
+        
+        
+        
+        
+        
+        
+        <article id="comment1" class="js-comment comment" itemprop="comment" itemscop itemtype="http://schema.org/Comment">
+  <div class="comment__content-wrapper">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+        <a rel="nofollow" href="https://google.com" target="_blank"><span itemprop="name">Kevin</span></a>
+      
+    </h3>
+    <div class="comment__date">
+      
+    </div>
+    <div itemprop="text"><p>Nice <strong>post!</strong></p>
+</div>
+</div>
+        
+       </div>
+   </div> 
+   <div class="row">
+       <div class="col-md-6 comment-form">
+        
+
+<form method="POST" action="https://api.staticman.net/v2/entry/uaorob/altgem/master/comments">
   <input name="options[redirect]" type="hidden" value="https://altgem.com">
   <!-- e.g. "2016-01-02-this-is-a-post" -->
   <input name="options[slug]" type="hidden" value="pylon-network">
-  <label><input name="fields[name]" type="text" placeholder="Name"></label>
-  <label><input name="fields[email]" type="email" placeholder="Email"></label>
-  <label><textarea name="fields[message]" placeholder="I'm thinking.."></textarea></label>
+  <label><input name="fields[name]" type="text" placeholder="Name" required></label>
+  <label><input name="fields[email]" type="email" placeholder="Email (private, not posted)" required></label>
+  <label><input name="fields[url]" type="text" placeholder="My Twitter/website"></label>
+  <label><textarea name="fields[message]" placeholder="I'm thinking.." required></textarea></label>
   
-  <button type="submit">Post</button>
-</form>      
+  <button type="submit" class="comment-btn">Submit comment</button>
+</form>
+
+      
        </div>
+       <div class="col-md-6 text-right">
+           <p class="form-details">
+               <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" class="external" target="_blank">Markdown</a> is allowed.</p>
+        <p>Your email will not be posted.</p>
+        </div>
    </div> 
+   </div>
+   </div>
    
-  </div>
-  </div>
+  
+  
         
   <footer class="footer">
       <div class="container">
@@ -326,7 +371,7 @@ He has a background heavily focused in electrical engineering.</p>
                     </span>
                 </p>
             </div>
-            <div class="col-md-6"><p>Last Update: 2018-01-19 01:21:28 +0000</p></div>
+            <div class="col-md-6"><p>Last Update: 2018-01-19 02:57:46 +0000</p></div>
         </div>
       </div>
 </footer>       
