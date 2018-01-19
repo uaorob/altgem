@@ -1,0 +1,29 @@
+form {
+    //text-align: center;
+    padding-top: 100px;
+    //font-variant: all-small-caps;
+}
+button {
+    background: #1d1d1d;
+    border: 1px solid #0b0b0b;
+    padding: 10px;
+    width: 50%;
+    color: #ebf2f8;
+}
+textarea {
+    background: #ebf2f8;
+    border: 1px solid #dae0e6;
+    padding: 10px;
+    width: 50%;
+    resize: vertical;
+    min-height: 150px;
+}
+input {
+    background: #ebf2f8;
+    border: 1px solid #dae0e6;
+    padding: 10px;
+    width: 50%;
+}
+label {
+    display: block;
+}

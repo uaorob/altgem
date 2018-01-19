@@ -13,6 +13,13 @@
         {{ content }}       
        </div>
    </div> 
+   {% if page.comments == "true" %}
+   <div class="row">
+       <div class="col-md-12">
+        {% include comments.html %}      
+       </div>
+   </div> 
+   {% endif %}
   </div>
   </div>
         

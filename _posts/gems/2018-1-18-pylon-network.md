@@ -7,6 +7,7 @@ symbol: PYLNT
 img: https://files.coinmarketcap.com/static/img/coins/32x32/pylon-network.png
 rating: "3"
 gem: true
+comments: "true"
 ---
 
 ## Purpose & Tech
