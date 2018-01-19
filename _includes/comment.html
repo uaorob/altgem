@@ -7,6 +7,7 @@
         <span itemprop="name">{{ include.name }}</span>
       {% endunless %}
     </h3>
+    <!--
     <div class="comment__date">
       {% if include.date %}
         {% if include.index %}<a href="#comment{{ include.index }}" itemprop="url">{% endif %}
@@ -14,5 +15,6 @@
         {% if include.index %}</a>{% endif %}
       {% endif %}
     </div>
+    -->
     <div itemprop="text">{{ include.message | markdownify }}</div>
 </div>
