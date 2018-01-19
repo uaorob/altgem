@@ -31,7 +31,7 @@
                 {% if post.type == "guide" %}
                 {{ post.title }}
                 {% else %}
-                {{ post.title }}
+                <img src="{{ post.img }}" class="img-fluid gem-img"/>&nbsp;{{ post.title }}
                 {% endif %}
                 </div>
             </div>
@@ -109,11 +109,11 @@
             {% endif %}
         </div>
         </a>
-      </div>
-    </div>
-{% endfor %}
 </div>
+{% endfor %}
 
+</div>
+</div>
     
 <div class="container box-parent" id="guides">    
 <!-- Guides -->
@@ -224,9 +224,10 @@
             {% endif %}
         </div>
         </a>
+        </div>
 {% endfor %}
 
-</div>
+
 </div>
 </div>
 
