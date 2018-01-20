@@ -10,7 +10,9 @@
   <div class="container">
    <div class="row">
        <div class="col-md-12">
-        {{ content }}       
+        {{ content }}
+        
+
        </div>
    </div> 
    </div>
@@ -52,8 +54,14 @@
    <div class="row">
        <div class="col-md-12">
            <h2>Contribute</h2>
-           <p>Did I miss anything? Got some insight?</p>
-           <p><a class="twitter-mention-button external" href="https://twitter.com/intent/tweet?screen_name=uaorob" target="_blank" data-size="large">Send me a tweet</a>.
+           <p>Did I miss anything? Care to share some insight? <a class="twitter-mention-button external" href="https://twitter.com/intent/tweet?screen_name=uaorob" target="_blank" data-size="large">Send me a tweet @uaorob</a></p>
+           
+           <p>
+            Was this post useful?
+            <a class="twitter-share-button external"
+  href="https://twitter.com/intent/tweet?text={{ page.description }}%20@uaorob&url={{ site.url }}{{ page.url }}"
+  data-size="large" title="Share on Twitter" target="_blank">
+         Share it with your friends <img src="/assets/img/twitter.png" width="24px"/> </a>
            </p>
        </div>
     </div> 

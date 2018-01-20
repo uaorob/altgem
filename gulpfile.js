@@ -90,7 +90,7 @@ gulp.task('serve-skipbuild', function() {
 
 gulp.task('deploy', function(callback) {
 	runSequence(
-		'fetch-newest-analytics',
+		//'fetch-newest-analytics',
 		'jekyll',
 		//'optimize-images',
 		'optimize-css',

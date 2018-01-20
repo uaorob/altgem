@@ -128,3 +128,13 @@ blockquote {
 header, .wrapper {
     padding-bottom: 125px;
 }
+
+.no-decoration {
+    text-decoration: none;
+    box-shadow: none;
+}
+a.no-decoration:hover {
+    text-decoration: none;
+    box-shadow: none;
+    color: #23527c;
+}
