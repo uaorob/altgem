@@ -3,7 +3,10 @@ title: "Altgem - Researching crypto gems."
 email: ""
 description: "Researching & rating cryptocurrency gems."
 baseurl: ""
-url: ""
+url: "https://altgem.com"
+
+author:
+  twitter: "uaorob"
 
 permalink: "/:title/"
 

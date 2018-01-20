@@ -15,8 +15,9 @@
    </div> 
    </div>
    </div>
-   {% if page.comments == "true" %}
+   
    <div class="wrapper" id="wrapper-comments">
+   {% if page.comments == "true" %}
    <div class="container" id="comments">
    <div class="row">
        <div class="col-md-12">
@@ -46,8 +47,20 @@
         </div>
    </div> 
    </div>
+   {% else %}
+   <div class="container" id="tweets">
+   <div class="row">
+       <div class="col-md-12">
+           <h2>Contribute</h2>
+           <p>Did I miss anything? Got some insight?</p>
+           <p><a class="twitter-mention-button external" href="https://twitter.com/intent/tweet?screen_name=uaorob" target="_blank" data-size="large">Send me a tweet</a>.
+           </p>
+       </div>
+    </div> 
    </div>
    {% endif %}
+   </div>
+   
   
   
         
