@@ -8,5 +8,5 @@
 * Github
 * Gulp
 
-Work in progress.
+Work in progress..
 
