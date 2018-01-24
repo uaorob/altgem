@@ -3,6 +3,7 @@ layout: post
 title: Pylon Network
 description: Altgem review of Pylon Network
 date: 2018-1-18 22:00:00 +0000
+updated: 2018-1-19 23:00:00 +0000
 symbol: PYLNT
 img: https://files.coinmarketcap.com/static/img/coins/32x32/pylon-network.png
 featured_image: /assets/img/gems/pylon-network.jpg

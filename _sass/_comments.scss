@@ -54,10 +54,15 @@ label {
 .single-comment {
     background: #ebf2f8;
     color: #1d1d1d;
+    padding: 25px;
+    margin-top: 10px;
 }
 .comment-form {
     padding: 0;
 }
 .text-right {
     text-align: right;
+}
+.comment__date {
+    opacity: 0.5;
 }
