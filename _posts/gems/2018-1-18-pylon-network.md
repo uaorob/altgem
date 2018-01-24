@@ -9,7 +9,6 @@ featured_image: /assets/img/gems/pylon-network.jpg
 rating: "3"
 gem: true
 comments: "false"
-last-modified-date:
 ---
 
 ![Pylon Network](/assets/img/gems/pylon-network.jpg){:class="img-responsive"}{:width="400px"}

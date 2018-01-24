@@ -2,7 +2,7 @@
 <div class="container box-parent" id="gems">
   
               
-{% assign sorted_posts = site.posts | sort: "last-modified-date" | reverse | where:"gem", true %}
+{% assign sorted_posts = site.posts | sort: "updated" | reverse | where:"gem", true %}
 {% for post in sorted_posts %}
 <div class="box gems"> 
 <a href="{{ post.url }}" class="biglink gem">
@@ -11,9 +11,15 @@
             <div class="gem-info">
                 <div class="gem-time">
                 <span class="newold">
-                <time class="postedon" datetime="{{ post.last-modified-date | date_to_xmlschema }}">
+                {% if post.updated %}
+                <time class="postedon" datetime="{{ post.updated | date_to_xmlschema }}">
                 <span class="postedago"></span>
                 </time>
+                {% else %}
+                <time class="postedon" datetime="{{ post.date | date_to_xmlschema }}">
+                <span class="postedago"></span>
+                </time>
+                {% endif %}
                 </span>
                 </div>
             </div>
@@ -29,9 +35,9 @@
             <div class="gem-info">
                 <div class="gem-name"> 
                 {% if post.type == "guide" %}
-                {{ post.title }}
+                {{ post.title | truncate: 48 }}
                 {% else %}
-                <img src="{{ post.img }}" class="img-fluid gem-img"/>&nbsp;{{ post.title }}
+                <img src="{{ post.img }}" class="img-fluid gem-img"/>&nbsp;{{ post.title | truncate: 48 }}
                 {% endif %}
                 </div>
             </div>
@@ -118,7 +124,7 @@
 <div class="container box-parent" id="guides">    
 <!-- Guides -->
      
-{% assign sorted_posts_2 = site.posts | sort: "last-modified-date" | reverse | where:"guide", true %}
+{% assign sorted_posts_2 = site.posts | sort: "updated" | reverse | where:"guide", true %}
 {% for post in sorted_posts_2 %}
 <div class="box guides">   
 <a href="{{ post.url }}" class="biglink gem">
@@ -127,8 +133,14 @@
             <div class="gem-info">
                 <div class="gem-time">
                 <span class="newold">
-                <time class="postedon" datetime="{{ post.last-modified-date | date_to_xmlschema }}">
+                {% if post.updated %}
+                <time class="postedon" datetime="{{ post.updated | date_to_xmlschema }}">
                 <span class="postedago"></span>
+                {% else %}
+                <time class="postedon" datetime="{{ post.date | date_to_xmlschema }}">
+                <span class="postedago"></span>
+                </time>
+                {% endif %}
                 </time>
                 </span>
                 </div>
@@ -145,9 +157,9 @@
             <div class="gem-info">
                 <div class="gem-name"> 
                 {% if post.type == "guide" %}
-                {{ post.title }}
+                {{ post.title | truncate: 48 }}
                 {% else %}
-                {{ post.title }}
+                {{ post.title | truncate: 48 }}
                 {% endif %}
                 </div>
             </div>

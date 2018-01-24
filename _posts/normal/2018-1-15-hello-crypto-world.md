@@ -1,16 +1,17 @@
 ---
 layout: post
 title: Hello Crypto World
-description: Purpose and 
+description: What is Altgem?
 type: guide
 guide: true
 date: 2018-1-15 02:42:10 +0000
+updated: 2018-1-17 02:42:10 +0000
 ---
 
 
 ## 1441 cryptocurrencies [and counting](https://coinmarketcap.com){:class="external"}{:target="_blank"}
 
-That's how hard it is to separate gems from scams.
+That's how hard it is to separate gems from shitty projects and outright scams.
 
 The chaos in our information and implicit disorder in our thoughts has reached an ATH.
 
