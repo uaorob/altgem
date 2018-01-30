@@ -5,7 +5,7 @@ description: What is Altgem?
 type: guide
 guide: true
 date: 2018-1-15 02:42:10 +0000
-updated: 2018-1-17 02:42:10 +0000
+updated: 2018-1-28 12:32:12 +0000
 comments: "false"
 ---
 
@@ -27,6 +27,62 @@ I will be posting:
 * crypto notes & guides
 
 The website will be updated regularly with fresh content and *altgem* ratings might change depending on what happens with that coin and the additional research I might do for it periodically.
+
+## Altgem Rankings
+
+<img src="/assets/img/Gem-full.svg"/>
+<img src="/assets/img/Gem-full.svg"/>
+<img src="/assets/img/Gem-full.svg"/>
+<img src="/assets/img/Gem-full.svg"/>
+<img src="/assets/img/Gem-full.svg"/>
+    5 gems - Diamond (>500M market cap)
+    
+Top gems. Stable continuous growth with impressive results.
+
+<img src="/assets/img/Gem-full.svg"/>
+<img src="/assets/img/Gem-full.svg"/>
+<img src="/assets/img/Gem-full.svg"/>
+<img src="/assets/img/Gem-full.svg"/>
+<img src="/assets/img/Gem-half.svg"/>
+    4.5 gems - Ruby (>250M)
+    
+Great gems. Stable continuous growth with great results.
+
+<img src="/assets/img/Gem-full.svg"/>
+<img src="/assets/img/Gem-full.svg"/>
+<img src="/assets/img/Gem-full.svg"/>
+<img src="/assets/img/Gem-half.svg"/>
+<img src="/assets/img/Gem-empty.svg"/>
+    3.5-4 gems - Emerald (>50M)
+    
+Very promising gems. Some growth, but impressive results are expected in the future.
+
+<img src="/assets/img/Gem-full.svg"/>
+<img src="/assets/img/Gem-full.svg"/>
+<img src="/assets/img/Gem-half.svg"/>
+<img src="/assets/img/Gem-empty.svg"/>
+<img src="/assets/img/Gem-empty.svg"/>
+    2.5-3 gems - Sapphire (>25M)
+    
+Promising gems. Expected to grow and have impressive results in the future.
+
+<img src="/assets/img/Gem-full.svg"/>
+<img src="/assets/img/Gem-half.svg"/>
+<img src="/assets/img/Gem-empty.svg"/>
+<img src="/assets/img/Gem-empty.svg"/>
+<img src="/assets/img/Gem-empty.svg"/>
+    1.5-2 gems - Jade (>5M)
+    
+Unstable gems. There's a long-shot these could turn into great or top gems.
+
+<img src="/assets/img/Gem-half.svg"/>
+<img src="/assets/img/Gem-empty.svg"/>
+<img src="/assets/img/Gem-empty.svg"/>
+<img src="/assets/img/Gem-empty.svg"/>
+<img src="/assets/img/Gem-empty.svg"/>
+    0.5-1 gems - Opal (<5M)
+    
+Highly unstable gems. There's a very low chance these could turn into great or top gems.
 
 ## Disclaimer
 
