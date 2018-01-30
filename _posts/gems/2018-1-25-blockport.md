@@ -5,7 +5,7 @@ date: 2018-1-25 03:42:46 +0000
 description: Altgem review of Blockport
 symbol: BPT
 img: https://files.coinmarketcap.com/static/img/coins/32x32/blockport.png
-featured_image: /assets/img/gems/[IMG-NAME].jpg
+featured_image: /assets/img/gems/blockport-featured.png
 gem: true 
 guide: false
 comments: "true"
@@ -15,6 +15,8 @@ updated: 2018-1-29 20:00:00 +0000
 ---
 
 *Note that this is __NOT financial advice__ and you should do your own research before investing anything into this project. This is also **NOT a sponsored post**. You might find this useful if you're conducting your own research into this project or if you need help creating your own research process -- feel free to 'steal' mine and adapt it to your needs.*
+
+![Blockport Featured Image](/assets/img/gems/blockport-featured.png){:width="800px"}{:class="img-responsive"}
 
 ## Overview
 
