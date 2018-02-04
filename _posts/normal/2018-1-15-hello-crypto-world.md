@@ -62,7 +62,7 @@ Very promising gems. Some growth, but impressive results are expected in the fut
 <img src="/assets/img/Gem-half.svg"/>
 <img src="/assets/img/Gem-empty.svg"/>
 <img src="/assets/img/Gem-empty.svg"/>
-    2.5-3 gems - Sapphire (>25M)
+    2.5-3 gems - Sapphire (>10M)
     
 Promising gems. Expected to grow and have impressive results in the future.
 
@@ -71,7 +71,7 @@ Promising gems. Expected to grow and have impressive results in the future.
 <img src="/assets/img/Gem-empty.svg"/>
 <img src="/assets/img/Gem-empty.svg"/>
 <img src="/assets/img/Gem-empty.svg"/>
-    1.5-2 gems - Jade (>5M)
+    1.5-2 gems - Jade (>1M)
     
 Unstable gems. There's a long-shot these could turn into great or top gems.
 
@@ -80,7 +80,7 @@ Unstable gems. There's a long-shot these could turn into great or top gems.
 <img src="/assets/img/Gem-empty.svg"/>
 <img src="/assets/img/Gem-empty.svg"/>
 <img src="/assets/img/Gem-empty.svg"/>
-    0.5-1 gems - Opal (<5M)
+    0.5-1 gems - Opal (<1M)
     
 Highly unstable gems. There's a very low chance these could turn into great or top gems.
 

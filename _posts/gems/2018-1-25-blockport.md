@@ -14,7 +14,7 @@ rating: "2.5"
 updated: 2018-1-29 20:00:00 +0000
 ---
 
-*Note that this is __NOT financial advice__ and you should do your own research before investing anything into this project. This is also **NOT a sponsored post**. You might find this useful if you're conducting your own research into this project or if you need help creating your own research process -- feel free to 'steal' mine and adapt it to your needs.*
+
 
 ![Blockport Featured Image](/assets/img/gems/blockport-featured.png){:width="800px"}{:class="img-responsive"}
 
@@ -273,7 +273,7 @@ A maximum amount of 69,440,000 BPT will be minted, never to be increased, accord
 
 Blockport is a 2.5 gem Sapphire. 
 
-    2.5-3 gems - Sapphire (>25M)
+    2.5-3 gems - Sapphire (>10M)
     Promising gems. Expected to grow and have impressive results in the future.
 
 <img src="/assets/img/Gem-full.svg"/>
@@ -285,3 +285,4 @@ Blockport is a 2.5 gem Sapphire.
 *For more info about gem rankings read the [Hello Crypto World](/hello-crypto-world) post.*
 
 
+*Note that this is __NOT financial advice__ and you should do your own research before investing anything into this project. This is also **NOT a sponsored post**. You might find this useful if you're conducting your own research into this project or if you need help creating your own research process -- feel free to 'steal' mine and adapt it to your needs.*
